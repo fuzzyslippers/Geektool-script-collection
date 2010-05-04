@@ -1,0 +1,11 @@
+xkcd.sh :
+How to use:
+	Run this in a folder and the picture it downloads will be named xkcd.png.
+----------------------------------------------------------------------------------------------------------------------
+weather.sh:
+How to use: 
+	This will display the temperature, followed by an F. To make the degree symbol, use "echo 'o'" and use a smaller font.
+	
+	USAGE:
+		-z: Defines the zipcode of the town you want to get the temperature of.
+----------------------------------------------------------------------------------------------------------------------
