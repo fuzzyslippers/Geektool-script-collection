@@ -8,7 +8,6 @@ function help() {
 	echo "	MD5 hash is in conditions.md5"
 	echo "	Oh, and the zipcode of Beverly Hills is 90210."
 }
-clear;
 while getopts "z:h" arg; do
 	case "$arg" in
 		z) ZIPCODE="$OPTARG";;
