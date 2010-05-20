@@ -9,7 +9,7 @@ get(){
 	cat ./temp2 | sed ' s@src="@@' | sed ' s@"@@' | awk 'NR==1 {print}' >> temp3
 	#Save the picture
 	PIC=$(cat temp3)
-	wget --quiet $PIC -O xkcd.png
+	wget --quiet $PIC -O ~/xkcd.png
 	#Remove temporary files
 	rm -rf web.html
 	rm -rf temp1
