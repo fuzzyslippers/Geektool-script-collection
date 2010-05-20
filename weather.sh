@@ -1,11 +1,21 @@
 #!/usr/bin/env bash
+function help() {
+	echo "conditions.sh [-z ZIPCODE]"
+	echo "USAGE:"
+	echo "	z: Puts the zipcode entered in the URL."
+	echo "ABOUT:"
+	echo "	This script gets the weather conditions for a specified zipcode."
+	echo "	Author: Nick Ippoliti"
+	echo "	MD5 hash is in conditions.md5"
+	echo "	Oh, and the zipcode of Beverly Hills is 90210."
+}
 ZIPCODE=
 while getopts "z:" opt 
 do
 	case $opt in
 		z) 
-			ZIPCODE="$OPTARG"
-			;;
+			ZIPCODE="$OPTARG";;
+		[?]) eval help;;
 	esac
 done
 URL="http://www.wunderground.com/cgi-bin/findweather/getForecast?query="$ZIPCODE

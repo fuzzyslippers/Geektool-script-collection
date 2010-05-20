@@ -8,10 +8,12 @@ function help() {
 	echo "	MD5 hash is in conditions.md5"
 	echo "	Oh, and the zipcode of Beverly Hills is 90210."
 }
+clear;
 while getopts "z:h" arg; do
 	case "$arg" in
 		z) ZIPCODE="$OPTARG";;
 		h) eval help;;
+		[?]) eval help;;
 	esac
 done
 curl --silent "http://www.wunderground.com/cgi-bin/findweather/getForecast?query="$ZIPCODE -o temp1
