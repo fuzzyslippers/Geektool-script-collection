@@ -26,8 +26,8 @@ dateCheck(){
 		echo "No new comics."
 	elif [ "$DATE" = "Thu" ]; then
 		echo "No new comics."
-	elif [ "$DATE" = "Fri" ]; then
-		echo "No new comics."
+	#elif [ "$DATE" = "Fri" ]; then
+	#	echo "No new comics."
 	elif [ "$DATE" = "Sat" ]; then
 		echo "No new comics."		
 	fi 
