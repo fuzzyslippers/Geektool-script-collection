@@ -6,7 +6,6 @@ function help() {
 	echo "	This script gets the weather conditions for a specified zipcode."
 	echo "	Author: Nick Ippoliti"
 	echo "	MD5 hash is in conditions.md5"
-	echo "	Oh, and the zipcode of Beverly Hills is 90210."
 }
 clear;
 while getopts "z:h" arg; do
